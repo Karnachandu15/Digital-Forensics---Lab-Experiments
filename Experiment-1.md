@@ -1,6 +1,5 @@
 # Experiment - 1
-# Create a forensic image of a storage device using FTK Imager or EnCase, and verify its integrity with hash values.
-
+# Create a forensic image of a storage device's using FTK Imager.
 ---
 
 ## Aim
@@ -30,7 +29,7 @@ This experiment involves connecting a source drive (via a write-blocker, if avai
 **Launch FTK Imager**
 
   - Open the FTK Imager tool on your computer.
-![Fig-1](<Output Screenshot/Exp1/Exp1/Screenshot 2025-08-31 165800.png>)
+![Fig-1](<Output Screenshot/Exp1/Screenshot 2025-08-31 165800.png>)
   - Make sure you run it with administrative privileges so that the tool can access hardware devices properly.
 
 **Select the Source Drive**
