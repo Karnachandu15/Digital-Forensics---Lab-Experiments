@@ -1,8 +1,6 @@
 # Experiment - 2
 # Recover deleted or damaged files from a storage device using Test Disk
-
-
-# Experiment 2: Recover Deleted or Damaged Files from a Storage Device using TestDisk  
+ 
 
 ## Aim  
 To recover deleted or damaged files from a storage device using **TestDisk**, a forensic recovery tool.  
