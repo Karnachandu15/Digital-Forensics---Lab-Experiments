@@ -15,90 +15,90 @@ This experiment involves connecting a source drive (via a write-blocker, if avai
 
 
 ## Tools & Equipment Used
-FTK Imager (Software)
+-FTK Imager (Software)
 
-Source Drive: A USB flash drive (or hard disk) containing data.
+-Source Drive: A USB flash drive (or hard disk) containing data.
 
-Destination Drive: An external hard drive with sufficient free space to store the image file.
+-Destination Drive: An external hard drive with sufficient free space to store the image file.
 
-Write Blocker (Hardware or Software - Recommended for a true forensic process)
+-Write Blocker (Hardware or Software - Recommended for a true forensic process)
 
 ## Procedure
 ### Launch FTK Imager
 
-    Open the FTK Imager tool on your computer.
+    -Open the FTK Imager tool on your computer.
 
-    Make sure you run it with administrative privileges so that the tool can access hardware devices properly.
+    -Make sure you run it with administrative privileges so that the tool can access hardware devices properly.
 
 ### Select the Source Drive
 
-    From the top menu, go to File → Create Disk Image.
+    -From the top menu, go to File → Create Disk Image.
 
-    In the dialog box, choose the type of source. Usually, for a physical storage device, select Physical Drive.
+    -In the dialog box, choose the type of source. Usually, for a physical storage device, select Physical Drive.
 
-    Click Next.
+    -Click Next.
 
-    A list of available drives will appear. Select the storage device that you want to acquire and then click Finish.
+    -A list of available drives will appear. Select the storage device that you want to acquire and then click Finish.
 
 ### Choose the Image Destination
 
-    Once the source is added, FTK Imager will ask you to specify where the image should be saved.
+    -Once the source is added, FTK Imager will ask you to specify where the image should be saved.
 
-    Click Add, then select the desired Image Type. Common choices include:
+    -Click Add, then select the desired Image Type. Common choices include:
 
-        E01 (EnCase Evidence File format) → widely used in forensics.
+        -E01 (EnCase Evidence File format) → widely used in forensics.
 
-        RAW (dd format) → bit-by-bit copy.
+        -RAW (dd format) → bit-by-bit copy.
 
-Click Next.
+    -Click Next.
 
 ### Enter Case Information (Optional but Recommended)
 
-    A window will prompt for case details like:
+    -A window will prompt for case details like:
 
-        Case Number
+        -Case Number
 
-        Evidence Number
+        -Evidence Number
 
-        Examiner Name
+        -Examiner Name
 
-        Notes (e.g., description of the device).
+        -Notes (e.g., description of the device).
 
-    Fill in the details for proper documentation, then click Next.
+    -Fill in the details for proper documentation, then click Next.
 
 ### Set Destination Path and File Name
 
-    Browse and select the folder where you want to save the forensic image.
+    -Browse and select the folder where you want to save the forensic image.
 
-    Provide a meaningful file name (e.g., USB_8GB_Evidence.E01).
+    -Provide a meaningful file name (e.g., USB_8GB_Evidence.E01).
 
-    Specify a segment size if required (default is fine in most cases).
+    -Specify a segment size if required (default is fine in most cases).
 
-    Choose the compression level if using E01 format.
+    -Choose the compression level if using E01 format.
 
-    Click Finish.
+    -Click Finish.
 
 ### Verify Image Options
 
-    FTK Imager will now show a summary of the settings you selected.
+    -FTK Imager will now show a summary of the settings you selected.
 
-    Review them carefully to make sure the correct drive and destination are selected.
+    -Review them carefully to make sure the correct drive and destination are selected.
 
-    Click Start to begin the imaging process.
+    -Click Start to begin the imaging process.
 
 ### Imaging and Hash Verification
 
-    FTK Imager will create the forensic image bit-by-bit from the source device.
+    -FTK Imager will create the forensic image bit-by-bit from the source device.
 
-    Once completed, it will automatically calculate cryptographic hashes (MD5, SHA1) for both the source and the image.
+    -Once completed, it will automatically calculate cryptographic hashes (MD5, SHA1) for both the source and the image.
 
-    Verify that the hashes match to confirm the integrity of the forensic image.
+    -Verify that the hashes match to confirm the integrity of the forensic image.
 
 ### Save the Log File
 
-    After the process is finished, FTK Imager generates a log file containing all details (case info, hash values, acquisition time, etc.).
+    -After the process is finished, FTK Imager generates a log file containing all details (case info, hash values, acquisition time, etc.).
 
-    Save this log file along with the image, since it acts as proof of authenticity and integrity.
+    -Save this log file along with the image, since it acts as proof of authenticity and integrity.
 
 ## Result 
-A forensic image of the selected storage device is successfully created using FTK Imager, along with hash verification and log documentation.
+    -A forensic image of the selected storage device is successfully created using FTK Imager, along with hash verification and log documentation.
