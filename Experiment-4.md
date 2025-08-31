@@ -12,7 +12,11 @@ Email spoofing is a technique used by attackers to forge the sender’s address,
 The **Mail Header Analyzer (MHA)** is a tool that helps in decoding and analyzing raw email headers. It provides detailed insights into each hop the email took, the originating IP, authentication results (SPF, DKIM, DMARC), and potential signs of spoofing.  
 
 ---
+## Tools & Equipment Used
+ - Mail Header Analyzer (MHA)
+ - Email Header
 
+---
 ## Procedure  
 
 **Obtain the Raw Email Header**  
