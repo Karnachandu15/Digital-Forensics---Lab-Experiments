@@ -27,7 +27,7 @@ This experiment involves connecting a source drive (via a write-blocker, if avai
 ### Launch FTK Imager
 
     -Open the FTK Imager tool on your computer.
-   Digital-Forensics---Lab-Experiments/Exp1/Screenshot 2025-08-31 165800.png 
+ 
     -Make sure you run it with administrative privileges so that the tool can access hardware devices properly.
 
 ### Select the Source Drive
@@ -35,7 +35,7 @@ This experiment involves connecting a source drive (via a write-blocker, if avai
     -From the top menu, go to File → Create Disk Image.
 
     -In the dialog box, choose the type of source. Usually, for a physical storage device, select Physical Drive.
-![alt text](<Exp1/Screenshot (46).png>)
+![Fig-1](<Exp1/Screenshot (46).png>)
     -Click Next.
 
     -A list of available drives will appear. Select the storage device that you want to acquire and then click Finish.
