@@ -4,12 +4,10 @@ Repository of Digital Forensics experiments, including procedures, screenshots, 
 ---
 
 ## 📌 Contents
-- Experiment 1: **Create a forensic image of a storage device using FTK Imager or EnCase, and verify
-its integrity with hash values.**
-- Experiment 2: **Recover deleted or damaged files from a storage device using Test Disk and
-Foremost: https://dft.sourceforge.net/**
+- Experiment 1: **Create a forensic image of a storage device using FTK Imager or EnCase, and verify.**
+- Experiment 2: **Recover deleted or damaged files from a storage device using Test Disk.**
 - Experiment 3: **Capture and analyze network traffic using Wireshark.**  
-- Experiment 4: **Analyze email headers and detect email spoofing using MHA.** 
+- Experiment 4: **Analyze email headers and detect email spoofing using MHA.**
 
 ---
 

@@ -21,7 +21,6 @@ This experiment involves connecting a source drive (via a write-blocker, if avai
 
 -Destination Drive: An external hard drive with sufficient free space to store the image file.
 
--Write Blocker (Hardware or Software - Recommended for a true forensic process)
 
 ## Procedure
 ### Launch FTK Imager
