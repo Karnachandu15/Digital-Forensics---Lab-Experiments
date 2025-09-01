@@ -24,7 +24,7 @@ This experiment involves connecting a source drive (via a write-blocker, if avai
 - Destination Drive: An external hard drive with sufficient free space to store the image file.
 
 ### Link to download FTK Imager
-[Link](https://d1kpmuwb7gvu1i.cloudfront.net/Imgr/4.7.3.81%20Release/Exterro_FTK_Imager\_%28x64%29-4.7.3.81.exe)
+[Click to download](https://d1kpmuwb7gvu1i.cloudfront.net/Imgr/4.7.3.81%20Release/Exterro_FTK_Imager\_%28x64%29-4.7.3.81.exe)
 
 ---
 
