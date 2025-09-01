@@ -22,6 +22,10 @@ In this experiment, we use TestDisk to identify and restore deleted or damaged f
 
 - Destination Drive: Internal hard drive is enough with sufficient free space to store the recovered data
 
+
+### Link to download Testdisk
+[Link](https://www.cgsecurity.org/Download_and_donate.php/testdisk-7.3-WIP.win64.zip)
+
 ---
 
 ## Procedure  

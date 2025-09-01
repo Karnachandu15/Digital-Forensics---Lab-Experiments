@@ -16,6 +16,10 @@ This experiment demonstrates how to use Wireshark to capture network traffic, fi
 ## Tools & Equipment Used
  - Wireshark(software)
 
+
+## Link to download Wireshark
+[link](https://2.na.dl.wireshark.org/win64/Wireshark-4.4.9-x64.exe)
+
 ## Procedure  
 
 **Launch Wireshark**  
