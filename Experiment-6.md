@@ -21,38 +21,40 @@ The Sleuth Kit (TSK) is a powerful open-source digital forensics toolkit that en
 
 ### 2. Basic File System Analysis
 1. Use `mmls` to display the partition layout
-```bash
-mmls Evidence.dd
-```
-Note the Start Sector of the partition (e.g., 2048).
+    ```bash
+    mmls Evidence.dd
+    ```
+    Note the Start Sector of the partition (e.g., 2048).
 
-![alt text](<Output Screenshot\Exp6\Screenshot 2025-10-23 222452.png>)
+    ![alt text](<Output Screenshot\Exp6\Screenshot 2025-10-23 222452.png>)
+
 <!-- [Insert Screenshot: Place the screenshot of mmls command output showing partition table] -->
 
 2. Use `fsstat` to examine file system details
-```bash
-fsstat -o 63 Evidence.raw
+    ```bash
+    fsstat -o 63 Evidence.raw
 
-```
-![alt text](<Output Screenshot\Exp6\Screenshot 2025-10-23 222446.png>)
-[Insert Screenshot: Place the screenshot showing file system information]
+    ```
+    ![alt text](<Output Screenshot\Exp6\Screenshot 2025-10-23 222446.png>)
+
+    <!-- [Insert Screenshot: Place the screenshot showing file system information] -->
 
 ### 3. File Recovery and Analysis
 1. Use `fls` to list files and directories
-```bash
-fls -o 63 Evidence.dd
-```
-![alt text](<Output Screenshot\Exp6\Screenshot 2025-10-23 224310.png>)
-![alt text](<Output Screenshot\Exp6\Screenshot 2025-10-23 222608.png>)
-<!-- [Insert Screenshot: Place the screenshot showing file listing] -->
+    ```bash
+    fls -o 63 Evidence.dd
+    ```
+    ![alt text](<Output Screenshot\Exp6\Screenshot 2025-10-23 224310.png>)
+    ![alt text](<Output Screenshot\Exp6\Screenshot 2025-10-23 222608.png>)
+    <!-- [Insert Screenshot: Place the screenshot showing file listing] -->
 
 2. Use `icat` to extract files using their inode numbers and to recover
-```bash
-icat evidence_disk.dd inode_number > recovered_file
-```
-![alt text](<Output Screenshot\Exp6\Screenshot 2025-10-23 222954.png>)
+    ```bash
+    icat evidence_disk.dd inode_number > recovered_file
+    ```
+    ![alt text](<Output Screenshot\Exp6\Screenshot 2025-10-23 222954.png>)
 
-<!-- [Insert Screenshot: Place the screenshot of file recovery process] -->
+    <!-- [Insert Screenshot: Place the screenshot of file recovery process] -->
 
 
 
@@ -72,11 +74,11 @@ ils evidence_disk.dd
 <!-- [Insert Screenshot: Place the screenshot showing deleted inodes] -->
 
 ### 4. Analyze Metadata
-1. use this command to displays timestamps, size, and allocation info for that file.
+    1. use this command to displays timestamps, size, and allocation info for that file.
 
-```bash
-istat -o 63 Evidence 6342-128-4
-```
+    ```bash
+    istat -o 63 Evidence 6342-128-4
+    ```
 ![alt text](<Output Screenshot\Exp6\Screenshot 2025-10-23 222950.png>)
 
 
