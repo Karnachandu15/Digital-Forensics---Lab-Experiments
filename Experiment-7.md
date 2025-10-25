@@ -81,7 +81,7 @@ This experiment demonstrates the forensic acquisition of data from an Android de
 ```powershell
    adb shell ls /storage
 ```
-You’ll see something like:
+   You’ll see something like:
 emulated  self  XXXX-XXXX
 The one with numbers (e.g. XXXX-XXXX) is your SD card.
 
