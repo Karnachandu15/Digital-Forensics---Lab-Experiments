@@ -33,7 +33,6 @@ The Sleuth Kit (TSK) is a powerful open-source digital forensics toolkit that en
 2. Use `fsstat` to examine file system details
     ```bash
     fsstat -o 63 Evidence.raw
-
     ```
     ![fsstat output](Output%20Screenshot/Exp6/Screenshot%202025-10-23%20222446.png)
 

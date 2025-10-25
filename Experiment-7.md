@@ -35,7 +35,7 @@ This experiment demonstrates the forensic acquisition of data from an Android de
 ```powershell
    adb devices
 ```
-![alt text](<Output Screenshot\Exp7\Screenshot 2025-10-23 231526.png>)
+![adb devices](Output%20Screenshot/Exp7/Screenshot%202025-10-23%20231526.png)
 <!-- [Insert Screenshot: ADB devices list output] -->
 
 3. Check device details:
@@ -43,7 +43,7 @@ This experiment demonstrates the forensic acquisition of data from an Android de
    adb shell getprop ro.product.model
    adb shell getprop ro.build.version.release
 ```
-![alt text](<Output Screenshot\Exp7\Screenshot 2025-10-23 233804.png>)
+![device properties](Output%20Screenshot/Exp7/Screenshot%202025-10-23%20233804.png)
 <!-- [Insert Screenshot: Device properties output] -->
 
 ### 2. Creating Full ADB Logical Backup
@@ -51,14 +51,14 @@ This experiment demonstrates the forensic acquisition of data from an Android de
 ```powershell
    adb backup -f device_backup.ab -all -system -shared -apk
 ```
-![alt text](<Output Screenshot\Exp7\Screenshot 2025-10-23 234009.png>)
+![backup creation](Output%20Screenshot/Exp7/Screenshot%202025-10-23%20234009.png)
 <!-- [Insert Screenshot: Backup creation dialog on device] -->
 
 2. Monitor backup progress:
 ```powershell
    dir device_backup.ab
 ```
-![alt text](<Output Screenshot\Exp6\Screenshot 2025-10-23 222950.png>)
+![backup file size](Output%20Screenshot/Exp7/Screenshot%202025-10-23%20234443.png)
 <!-- [Insert Screenshot: File size and creation time] -->
 
 ### 3. Backup Integrity Verification
@@ -66,7 +66,7 @@ This experiment demonstrates the forensic acquisition of data from an Android de
 ```powershell
    certutil -hashfile device_backup.ab SHA256
 ```
-![alt text](<Output Screenshot\Exp7\Screenshot 2025-10-23 234443.png>)
+![hash verification](Output%20Screenshot/Exp7/Screenshot%202025-10-23%20234443.png)
 <!-- [Insert Screenshot: Hash output] -->
 
 ### 4. Creating External Storage Only Backup
@@ -74,18 +74,18 @@ This experiment demonstrates the forensic acquisition of data from an Android de
 ```powershell
    adb devices
 ```
-![alt text](<Output Screenshot\Exp7\Screenshot 2025-10-24 230100.1.png>)
+![adb connection check](Output%20Screenshot/Exp7/Screenshot%202025-10-24%20230100.1.png)
 <!-- [Insert Screenshot: Shared storage backup dialog] -->
 
 2. Find the external storage path:
 ```powershell
    adb shell ls /storage
 ```
-   You’ll see something like:
+   You'll see something like:
 emulated  self  XXXX-XXXX
 The one with numbers (e.g. XXXX-XXXX) is your SD card.
 
-![alt text](<Output Screenshot\Exp7\Screenshot 2025-10-24 230100.1.2.png>)
+![storage list](Output%20Screenshot/Exp7/Screenshot%202025-10-24%20230100.1.2.png)
 
 3. Create a backup folder on the host computer, for example:
 ```poweshell
@@ -102,11 +102,11 @@ Replace XXXX-XXXX with your card ID:
 
 5. Verify backup creation:
 
-![alt text](<Output Screenshot\Exp7\Screenshot 2025-10-24 225851.png>)
+![backup verification](Output%20Screenshot/Exp7/Screenshot%202025-10-24%20225851.png)
 <!-- [Insert Screenshot: Shared storage backup file details] -->
 
 6. Compare sizes of full backup vs shared storage backup:
-![alt text](<Output Screenshot\Exp7\Screenshot 2025-10-24 225926.png>)
+![size comparison](Output%20Screenshot/Exp7/Screenshot%202025-10-24%20225926.png)
 <!-- [Insert Screenshot: Size comparison of backup files] -->
 
 
@@ -116,8 +116,8 @@ Replace XXXX-XXXX with your card ID:
 ```powershell
    tar -cvf sd_backup.tar "C:\Users\K CHANDRA SEKHAR\backup"
 ```
-![alt text](<Output Screenshot\Exp7\Screenshot 2025-10-24 233410.png>)
-![alt text](<Output Screenshot\Exp7\Screenshot 2025-10-24 233430.png>)
+![tar creation 1](Output%20Screenshot/Exp7/Screenshot%202025-10-24%20233410.png)
+![tar creation 2](Output%20Screenshot/Exp7/Screenshot%202025-10-24%20233430.png)
 <!-- [Insert Screenshot: Conversion process output] -->
 
 ### 6. Extracting Backup Contents
@@ -125,14 +125,14 @@ Replace XXXX-XXXX with your card ID:
 ```powershell
    tar -xvf sd_backup.tar -C D:\extracted_backup\
 ```
-![alt text](<Output Screenshot\Exp7\Screenshot 2025-10-24 234127.png>)
+![tar extraction](Output%20Screenshot/Exp7/Screenshot%202025-10-24%20234127.png)
 <!-- [Insert Screenshot: Extraction process] -->
 
 2. List extracted contents:
 ```powershell
    dir extracted_backup /s
 ```
-![alt text](<Output Screenshot\Exp7\Screenshot 2025-10-24 234421.png>)
+![directory listing](Output%20Screenshot/Exp7/Screenshot%202025-10-24%20234421.png)
 <!-- [Insert Screenshot: Directory listing] -->
 
 ### 7. Data Analysis

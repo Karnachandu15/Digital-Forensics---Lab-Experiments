@@ -38,7 +38,8 @@ java -version
 ```bash
 java -jar StegExpose.jar -h
 ```
-[Insert Screenshot: Place screenshot showing StegExpose help menu]
+![StegExpose help menu](Output%20Screenshot/Exp8/stegexpose-help.png)
+<!-- [Insert Screenshot: Place screenshot showing StegExpose help menu] -->
 
 ### 2. Preparing Test Images
 1. Collect sample images for testing:
@@ -46,33 +47,38 @@ java -jar StegExpose.jar -h
    - Images with known hidden data
    - Suspicious images for analysis
 
-[Insert Screenshot: Place screenshot showing test image collection]
+![test image collection](Output%20Screenshot/Exp8/test-images.png)
+<!-- [Insert Screenshot: Place screenshot showing test image collection] -->
 
 ### 3. Basic Image Analysis
 1. Analyze a single image:
 ```bash
 stegexpose image1.jpg
 ```
-[Insert Screenshot: Place screenshot of single image analysis result]
+![single image analysis](Output%20Screenshot/Exp8/single-image-analysis.png)
+<!-- [Insert Screenshot: Place screenshot of single image analysis result] -->
 
 2. Analyze multiple images in a directory:
 ```bash
 stegexpose directory_path/
 ```
-[Insert Screenshot: Place screenshot showing batch analysis results]
+![batch analysis](Output%20Screenshot/Exp8/batch-analysis.png)
+<!-- [Insert Screenshot: Place screenshot showing batch analysis results] -->
 
 ### 4. Advanced Detection Settings
 1. Run analysis with custom threshold:
 ```bash
 stegexpose -t 0.2 suspicious_image.png
 ```
-[Insert Screenshot: Place screenshot of analysis with custom threshold]
+![custom threshold analysis](Output%20Screenshot/Exp8/custom-threshold.png)
+<!-- [Insert Screenshot: Place screenshot of analysis with custom threshold] -->
 
 2. Generate detailed report:
 ```bash
 stegexpose -csv report.csv image_folder/
 ```
-[Insert Screenshot: Place screenshot showing CSV report generation]
+![CSV report generation](Output%20Screenshot/Exp8/csv-report.png)
+<!-- [Insert Screenshot: Place screenshot showing CSV report generation] -->
 
 ### 5. Statistical Analysis Methods
 1. Primary Detection Techniques Used:
@@ -81,7 +87,8 @@ stegexpose -csv report.csv image_folder/
    - Chi-Square Attack
    - Primary Sets Analysis
 
-[Insert Screenshot: Place screenshot showing different analysis methods]
+![analysis methods](Output%20Screenshot/Exp8/analysis-methods.png)
+<!-- [Insert Screenshot: Place screenshot showing different analysis methods] -->
 
 ### 6. Result Interpretation
 1. Understanding the output scores:
@@ -89,12 +96,14 @@ stegexpose -csv report.csv image_folder/
    - 0.2 to 0.4: Suspicious
    - Above 0.4: High probability of hidden content
 
-[Insert Screenshot: Place screenshot showing result interpretation]
+![result interpretation](Output%20Screenshot/Exp8/result-interpretation.png)
+<!-- [Insert Screenshot: Place screenshot showing result interpretation] -->
 
 ### 7. Validation Process
 1. Compare results with known test cases
 2. Document false positives and false negatives
-[Insert Screenshot: Place screenshot of validation results]
+![validation results](Output%20Screenshot/Exp8/validation-results.png)
+<!-- [Insert Screenshot: Place screenshot of validation results] -->
 
 ## Results
 The experiment successfully demonstrated:
@@ -141,5 +150,3 @@ Steg-Expose proved to be an effective tool for detecting steganographic content 
 4. Generate comprehensive reports for further investigation
 
 The tool showed particular strength in [specific area] while having some limitations in [specific area]. For forensic investigations, it serves as a valuable initial screening tool for detecting hidden data in images.
-
-[Note: Please add actual screenshots of your experiment execution in the designated places marked with "Insert Screenshot" tags. Also, replace all placeholder values in square brackets with actual experimental data.]
