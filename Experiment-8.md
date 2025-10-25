@@ -14,28 +14,31 @@ Steg-Expose is a specialized steganalysis tool designed to detect steganography 
 5. Image manipulation tools (optional, for creating test cases)
 
 ## Prerequisites
-1. Python 3.x installed
-2. Steg-Expose installed via pip:
+1. Java Runtime Environment (JRE) installed
+2. Download StegExpose from GitHub:
 ```bash
-pip install stegexpose
+git clone https://github.com/b3dk7/StegExpose.git
 ```
 3. Test images prepared (both with and without hidden data)
 
 ## Procedure
 
 ### 1. Installation and Setup
-1. Install Python dependencies
+1. Navigate to StegExpose directory:
 ```bash
-pip install numpy
-pip install PIL
+cd StegExpose
 ```
-[Insert Screenshot: Place screenshot of successful installation]
 
-2. Verify Steg-Expose installation
+2. Verify Java installation:
 ```bash
-stegexpose -h
+java -version
 ```
-[Insert Screenshot: Place screenshot showing Steg-Expose help menu]
+
+3. Test StegExpose:
+```bash
+java -jar StegExpose.jar -h
+```
+[Insert Screenshot: Place screenshot showing StegExpose help menu]
 
 ### 2. Preparing Test Images
 1. Collect sample images for testing:

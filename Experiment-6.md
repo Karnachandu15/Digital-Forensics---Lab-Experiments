@@ -22,49 +22,63 @@ The Sleuth Kit (TSK) is a powerful open-source digital forensics toolkit that en
 ### 2. Basic File System Analysis
 1. Use `mmls` to display the partition layout
 ```bash
-mmls evidence_disk.dd
+mmls Evidence.dd
 ```
-[Insert Screenshot: Place the screenshot of mmls command output showing partition table]
+Note the Start Sector of the partition (e.g., 2048).
+
+![alt text](<Output Screenshot\Exp6\Screenshot 2025-10-23 222452.png>)
+<!-- [Insert Screenshot: Place the screenshot of mmls command output showing partition table] -->
 
 2. Use `fsstat` to examine file system details
 ```bash
-fsstat -f ntfs evidence_disk.dd
+fsstat -o 63 Evidence.raw
+
 ```
+![alt text](<Output Screenshot\Exp6\Screenshot 2025-10-23 222446.png>)
 [Insert Screenshot: Place the screenshot showing file system information]
 
 ### 3. File Recovery and Analysis
 1. Use `fls` to list files and directories
 ```bash
-fls -r evidence_disk.dd
+fls -o 63 Evidence.dd
 ```
-[Insert Screenshot: Place the screenshot showing file listing]
+![alt text](<Output Screenshot\Exp6\Screenshot 2025-10-23 224310.png>)
+![alt text](<Output Screenshot\Exp6\Screenshot 2025-10-23 222608.png>)
+<!-- [Insert Screenshot: Place the screenshot showing file listing] -->
 
-2. Use `icat` to extract files using their inode numbers
+2. Use `icat` to extract files using their inode numbers and to recover
 ```bash
 icat evidence_disk.dd inode_number > recovered_file
 ```
-[Insert Screenshot: Place the screenshot of file recovery process]
+![alt text](<Output Screenshot\Exp6\Screenshot 2025-10-23 222954.png>)
 
-### 4. Timeline Analysis
+<!-- [Insert Screenshot: Place the screenshot of file recovery process] -->
+
+
+
+<!-- ### 4. Timeline Analysis
 1. Create a timeline of file activity
 ```bash
 fls -m "/" evidence_disk.dd > body.txt
 mactime -b body.txt > timeline.txt
 ```
-[Insert Screenshot: Place the screenshot showing timeline analysis]
+[Insert Screenshot: Place the screenshot showing timeline analysis] -->
 
-### 5. Deleted File Recovery
+<!-- ### 5. Deleted File Recovery
 1. Use `ils` to list deleted inodes
 ```bash
 ils evidence_disk.dd
-```
-[Insert Screenshot: Place the screenshot showing deleted inodes]
+``` -->
+<!-- [Insert Screenshot: Place the screenshot showing deleted inodes] -->
 
-2. Recover deleted files using `icat`
+### 4. Analyze Metadata
+1. use this command to displays timestamps, size, and allocation info for that file.
+
 ```bash
-icat evidence_disk.dd deleted_inode > recovered_deleted_file
+istat -o 63 Evidence 6342-128-4
 ```
-[Insert Screenshot: Place the screenshot of deleted file recovery]
+![alt text](<Output Screenshot\Exp6\Screenshot 2025-10-23 222950.png>)
+
 
 ## Results
 The experiment successfully demonstrated:
@@ -84,5 +98,3 @@ Key findings included:
 
 ## Conclusion
 The Sleuth Kit proves to be an essential tool in digital forensics investigations, providing detailed insights into file systems and enabling investigators to recover and analyze digital evidence effectively. Through this experiment, we gained practical experience in using various Sleuth Kit commands and understanding their application in real-world forensic scenarios.
-
-[Note: Please add actual screenshots of your experiment execution in the designated places marked with "Insert Screenshot" tags]
