@@ -1,11 +1,15 @@
-# Experiment 10: Use Ghidra to Disassemble and Analyze Malware Code
+# Experiment 10
+# Use Ghidra to Disassemble and Analyze Malware Code
 
+---
 ## Aim
 To demonstrate the process of using Ghidra to disassemble, decompile, and analyze malware code for understanding its functionality and potential threats.
 
+---
 ## Description
 Ghidra is a powerful software reverse engineering (SRE) framework developed by NSA. This experiment focuses on using Ghidra's features to analyze malware samples, understand their behavior, identify malicious functions, and document findings. The analysis will help in understanding the malware's capabilities and potential impact on systems.
 
+---
 ## Tools Used
 1. Ghidra (latest version)
 2. Java Development Kit (JDK)
@@ -13,6 +17,7 @@ Ghidra is a powerful software reverse engineering (SRE) framework developed by N
 4. Sample malware (in a controlled environment)
 5. Windows/Linux operating system
 
+---
 ## Prerequisites
 1. Isolated analysis environment (Virtual Machine)
 2. Java Development Kit installed
@@ -20,6 +25,7 @@ Ghidra is a powerful software reverse engineering (SRE) framework developed by N
 4. Test malware samples (safely contained)
 5. Basic understanding of assembly language
 
+---
 ## Procedure
 
 ### 1. Environment Setup
@@ -122,6 +128,7 @@ Ghidra is a powerful software reverse engineering (SRE) framework developed by N
 <!-- [Insert Screenshot: Place screenshot of memory layout] -->
 ![Fig-1](Output%20Screenshot/Exp10/Screenshot%20From%202025-10-26%2001-44-00.png)
 
+---
 ## Results
 The experiment successfully demonstrated:
 
@@ -142,7 +149,7 @@ The experiment successfully demonstrated:
    - System impact assessment
    - Network indicators
 
-
+---
 ## Conclusion
 Ghidra proved to be a powerful tool for malware analysis and reverse engineering.
 
@@ -164,6 +171,7 @@ Best Practices Identified:
 
 [Note: Please add actual screenshots of your experiment execution in the designated places marked with "Insert Screenshot" tags. Also, replace all placeholder values in square brackets with actual experimental data. Remember to handle malware samples in a safe, isolated environment only.]
 
+---
 ## Safety Warning
 ⚠️ **IMPORTANT**: Always analyze malware in an isolated environment. Never execute suspicious code on production systems. Use appropriate safety measures including:
 - Isolated virtual machines
@@ -171,3 +179,5 @@ Best Practices Identified:
 - Proper handling procedures
 - Data backup
 - Safety protocols
+
+---

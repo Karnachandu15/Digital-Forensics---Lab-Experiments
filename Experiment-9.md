@@ -1,23 +1,29 @@
-# Experiment 9: Use Process Explorer to Identify Suspicious Processes
+# Experiment 9
+# Use Process Explorer to Identify Suspicious Processes
 
+---
 ## Aim
 To demonstrate the use of Process Explorer in identifying, analyzing, and investigating suspicious processes running on a Windows system for digital forensics purposes.
 
+---
 ## Description
 Process Explorer is an advanced system monitoring tool that provides detailed information about which handles and DLLs processes have opened or loaded. This experiment focuses on using Process Explorer to identify potentially malicious processes, analyze their behavior, and determine their impact on system security.
 
+---
 ## Tools Used
 1. Process Explorer (Sysinternals Suite)
 2. Windows Operating System
 3. Test processes (both legitimate and suspicious)
 4. VirusTotal integration (for malware verification)
 
+---
 ## Prerequisites
 1. Download and install Process Explorer from Microsoft Sysinternals
 2. Administrative privileges on the Windows system
 3. Internet connection (for VirusTotal integration)
 4. Basic understanding of Windows processes
 
+---
 ## Procedure
 
 ### 1. Installation and Setup
@@ -101,7 +107,7 @@ Process Explorer is an advanced system monitoring tool that provides detailed in
 ![Process tree view](Output%20Screenshot/Exp9/Screenshot%20(134).png)
 <!-- [Insert Screenshot: Place screenshot of process tree view] -->
 
-
+---
 ## Results
 The experiment successfully demonstrated:
 
@@ -121,7 +127,7 @@ The experiment successfully demonstrated:
    - Common characteristics of malicious processes
    - System resource impact
 
-
+---
 ## Conclusion
 Process Explorer is an effective digital forensics tool for identifying and analyzing suspicious processes on Windows systems. 
 
@@ -132,3 +138,5 @@ Key benefits:
 4. Detailed view of process relationships and loaded DLLs
 
 The tool is recommended for initial system investigation and ongoing security monitoring of Windows environments.
+
+---

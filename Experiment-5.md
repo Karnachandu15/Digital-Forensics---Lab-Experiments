@@ -1,16 +1,22 @@
 # Experiment - 5
 # Use Autopsy to Create a Case and Import Evidence
+---
 
 ## Aim
 To learn how to create a new case in Autopsy Digital Forensics Tool and import digital evidence for analysis.
+
+---
 
 ## Tools Used
 - Autopsy 4.21.0 or later
 - Sample digital evidence file (disk image, USB image, or any other supported format)
 
+---
+
 ## Description
 Autopsy is a popular open-source digital forensics platform used by law enforcement, military, and corporate examiners to investigate what happened on a computer. It has a graphical interface that allows forensic investigators to analyze disk images, perform timeline analysis, and recover deleted files.
 
+---
 ## Procedure
 
 1. **Launch Autopsy**
@@ -72,6 +78,8 @@ Autopsy is a popular open-source digital forensics platform used by law enforcem
    ![alt text](<Output Screenshot\Exp5\Screenshot 2025-10-23 194545.png>)
    <!-- Insert screenshot of analysis progress in Output Screenshot/Exp5/analysis_progress.png -->
 
+---
+
 ## Result
 After completing this experiment, you should be able to:
 1. Successfully create a new case in Autopsy
@@ -79,6 +87,7 @@ After completing this experiment, you should be able to:
 3. Configure appropriate ingest modules for analysis
 4. Begin the forensic analysis process
 
+---
 The imported evidence will be ready for detailed forensic analysis using Autopsy's various tools and features. The case structure is now set up to maintain proper chain of custody and documentation of the investigation process.
 
 [Screenshot placeholder: Final case view]
@@ -86,3 +95,5 @@ The imported evidence will be ready for detailed forensic analysis using Autopsy
 <!-- Insert screenshot of final case view in Output Screenshot/Exp5/final_view.png -->
 
 Note: Remember to document all steps and maintain proper chain of custody throughout the process. Each action taken in Autopsy is logged and can be reviewed later as part of the investigation documentation.
+
+---

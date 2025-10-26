@@ -80,3 +80,5 @@ This experiment demonstrates how to use Wireshark to capture network traffic, fi
 
 ## Result  
 Network traffic was successfully captured and analyzed using Wireshark. The experiment demonstrated how to filter packets, inspect protocol details, and save capture logs for forensic investigation.  
+
+---

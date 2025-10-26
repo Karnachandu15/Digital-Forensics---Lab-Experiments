@@ -17,6 +17,7 @@ The **Mail Header Analyzer (MHA)** is a tool that helps in decoding and analyzin
  - Email Header
 ## MHA Link
 [Click to redirect](https://mha.azurewebsites.net/)
+
 ---
 ## Procedure  
 
@@ -64,7 +65,10 @@ The **Mail Header Analyzer (MHA)** is a tool that helps in decoding and analyzin
 ![alt text](<Output Screenshot/Exp4/Screenshot (87).png>)
 ![alt text](<Output Screenshot/Exp4/Screenshot (88).png>)
 ![alt text](<Output Screenshot/Exp4/Screenshot (89).png>)
+
 ---
 
 ## Result  
-The email header was successfully analyzed using the Mail Header Analyzer. Spoofing indicators, such as mismatched sender details and failed authentication checks, were identified, helping in the detection of forged or malicious emails.  
+The email header was successfully analyzed using the Mail Header Analyzer. Spoofing indicators, such as mismatched sender details and failed authentication checks, were identified, helping in the detection of forged or malicious emails.
+
+---

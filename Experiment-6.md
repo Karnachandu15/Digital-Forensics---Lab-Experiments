@@ -1,16 +1,25 @@
-# Experiment 6: Use Sleuth Kit to Analyze Digital Evidence
+# Experiment - 6
+# Use Sleuth Kit to Analyze Digital Evidence
+
+---
 
 ## Aim
 To understand and demonstrate the usage of Sleuth Kit in analyzing digital evidence for forensic investigation purposes.
 
+---
+
 ## Description
 The Sleuth Kit (TSK) is a powerful open-source digital forensics toolkit that enables investigators to analyze disk images and recover files. This experiment focuses on using various Sleuth Kit commands and tools to examine digital evidence, recover deleted files, and analyze file system artifacts.
+
+---
 
 ## Tools Used
 1. The Sleuth Kit (TSK)
 2. Command Line Interface
 3. Disk Image (for analysis)
 4. AutopsyⓇ (GUI frontend for Sleuth Kit)
+
+---
 
 ## Procedure
 
@@ -80,6 +89,7 @@ ils evidence_disk.dd
     ```
 ![istat output](Output%20Screenshot/Exp6/Screenshot%202025-10-23%20222950.png)
 
+---
 
 ## Results
 The experiment successfully demonstrated:
@@ -97,5 +107,9 @@ Key findings included:
 - Created comprehensive timeline of file system activities
 - Demonstrated proper digital forensics investigation procedures
 
+---
+
 ## Conclusion
 The Sleuth Kit proves to be an essential tool in digital forensics investigations, providing detailed insights into file systems and enabling investigators to recover and analyze digital evidence effectively. Through this experiment, we gained practical experience in using various Sleuth Kit commands and understanding their application in real-world forensic scenarios.
+
+---

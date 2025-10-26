@@ -1,11 +1,15 @@
-# Experiment 8: Use Steg-Expose to Detect Hidden Data in Images
+# Experiment 8 
+# Use Steg-Expose to Detect Hidden Data in Images
 
+---
 ## Aim
 To demonstrate the process of detecting steganography (hidden data) in images using Steg-Expose tool and analyze the results for potential secret messages or embedded files.
 
+---
 ## Description
 Steg-Expose is a specialized steganalysis tool designed to detect steganography in image files. This experiment focuses on using Steg-Expose to analyze various image files and determine if they contain hidden data using statistical analysis methods. The tool combines multiple steganalysis techniques to identify potential steganographic content.
 
+---
 ## Tools Used
 1. Steg-Expose
 2. Python 3.x
@@ -13,6 +17,7 @@ Steg-Expose is a specialized steganalysis tool designed to detect steganography 
 4. Terminal/Command Prompt
 5. Image manipulation tools (optional, for creating test cases)
 
+---
 ## Prerequisites
 1. Java Runtime Environment (JRE) installed
 2. Download StegExpose from GitHub:
@@ -21,6 +26,7 @@ git clone https://github.com/b3dk7/StegExpose.git
 ```
 3. Test images prepared (both with and without hidden data)
 
+---
 ## Procedure
 
 ### 1. Installation and Setup
@@ -76,6 +82,7 @@ this will make the result to save in the .CSV file
 ![result interpretation](Output%20Screenshot/Exp8/Screenshot%202025-10-26%20155902.png)
 <!-- [Insert Screenshot: Place screenshot showing result interpretation] -->
 
+---
 
 ## Results
 The experiment successfully demonstrated the use of StegExpose for detecting hidden data in images:
@@ -95,7 +102,7 @@ The experiment successfully demonstrated the use of StegExpose for detecting hid
    - Results were saved in CSV format for easy review
    - The tool identified which images likely contain hidden information
 
-
+---
 ## Conclusion
 Steg-Expose proved to be an effective tool for detecting steganographic content in images. The experiment successfully demonstrated its capability to:
 1. Identify potentially compromised images
@@ -104,3 +111,5 @@ Steg-Expose proved to be an effective tool for detecting steganographic content 
 4. Generate comprehensive reports for further investigation
 
 The tool showed particular strength in [specific area] while having some limitations in [specific area]. For forensic investigations, it serves as a valuable initial screening tool for detecting hidden data in images.
+
+---

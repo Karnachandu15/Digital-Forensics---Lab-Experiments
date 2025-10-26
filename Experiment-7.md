@@ -1,11 +1,16 @@
-# Experiment 7: Android Device Forensic Acquisition using ADB Logical Backup
+# Experiment 7 
+# Android Device Forensic Acquisition using ADB Logical Backup
 
+---
 ## Aim
 To perform logical acquisition of data from an Android device using Android Debug Bridge (ADB) backup functionality.
+
+---
 
 ## Description
 This experiment demonstrates the forensic acquisition of data from an Android device using ADB's built-in backup functionality. The process includes creating a logical backup, verifying its integrity through hashing, and analyzing the extracted contents while maintaining forensic principles.
 
+---
 ## Tools Used
 1. Android Debug Bridge (ADB)
 2. Android Device
@@ -17,6 +22,7 @@ This experiment demonstrates the forensic acquisition of data from an Android de
    ```
 5. SHA256 hashing tool
 
+---
 ## Prerequisites
 1. Android device with:
    - USB debugging enabled
@@ -27,6 +33,7 @@ This experiment demonstrates the forensic acquisition of data from an Android de
    - Java Runtime Environment (JRE)
    - Required USB drivers installed
 
+---
 ## Procedure
 
 ### 1. Device Connection and Verification
@@ -145,6 +152,7 @@ Replace XXXX-XXXX with your card ID:
 
 2. Analyze database contents using SQLite Browser
 
+---
 ## Results
 Document the following findings:
 1. Backup File Details:
@@ -157,7 +165,9 @@ Document the following findings:
    - Total files extracted: [Count]
    - Key databases found: [List]
 
-
+---
 
 ## Conclusion
 The experiment successfully demonstrated the process of performing logical acquisition from an Android device using ADB backup. This method proves effective for basic forensic acquisition while maintaining evidence integrity through proper documentation and hash verification.
+
+---
