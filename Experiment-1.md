@@ -61,15 +61,15 @@ This experiment involves connecting a source drive (via a write-blocker, if avai
 
 **Enter Case Information Optional but Recommended**
 
-    - A window will prompt for case details like:
+  -  A window will prompt for case details like:
 
-        - Case Number
+    - Case Number
 
-        - Evidence Number
+    - Evidence Number
 
-        - Examiner Name
+    - Examiner Name
 
-        - Notes (e.g., description of the device).
+    - Notes (e.g., description of the device).
 
     - Fill in the details for proper documentation, then click Next.
 ![Fig-6](<Output Screenshot/Exp1/Screenshot (49).png>)
