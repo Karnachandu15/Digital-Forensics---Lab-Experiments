@@ -28,7 +28,8 @@ Ghidra is a powerful software reverse engineering (SRE) framework developed by N
 3. Configure isolated analysis environment
 4. Verify Ghidra launches successfully
 
-[Insert Screenshot: Place screenshot of Ghidra's initial launch screen]
+<!-- [Insert Screenshot: Place screenshot of Ghidra's initial launch screen] -->
+![Fig-1](<Output Screenshot\Exp10\Screenshot From 2025-10-26 01-09-37.png>)
 
 ### 2. Project Creation
 1. Create new project:
@@ -36,14 +37,20 @@ Ghidra is a powerful software reverse engineering (SRE) framework developed by N
    - Select Non-Shared Project
    - Choose project location
    
-[Insert Screenshot: Place screenshot of project creation]
+<!-- [Insert Screenshot: Place screenshot of project creation] -->
+![Fig-1](<Output Screenshot\Exp10\Screenshot From 2025-10-26 01-17-47.png>)
+
+![Fig-1](<Output Screenshot\Exp10\Screenshot From 2025-10-26 01-23-41.png>)
 
 2. Import malware sample:
    - File → Import File
    - Select malware sample
    - Configure import options
    
-[Insert Screenshot: Place screenshot showing import process]
+<!-- [Insert Screenshot: Place screenshot showing import process] -->
+![Fig-1](<Output Screenshot\Exp10\Screenshot From 2025-10-26 01-26-44.png>)
+
+![Fig-1](<Output Screenshot\Exp10\Screenshot From 2025-10-26 01-27-20.png>)
 
 ### 3. Initial Analysis
 1. Double-click imported file to analyze
@@ -53,7 +60,9 @@ Ghidra is a powerful software reverse engineering (SRE) framework developed by N
    - Strings detected
    - Entry points located
    
-[Insert Screenshot: Place screenshot of auto-analysis results]
+<!-- [Insert Screenshot: Place screenshot of auto-analysis results] -->
+![Fig-1](<Output Screenshot\Exp10\Screenshot From 2025-10-26 01-28-20.png>)
+![Fig-1](<Output Screenshot\Exp10\Screenshot From 2025-10-26 01-30-50.png>)
 
 ### 4. Code Analysis
 1. Navigate through Program Trees:
@@ -61,14 +70,16 @@ Ghidra is a powerful software reverse engineering (SRE) framework developed by N
    - Labels
    - Data Types
    
-[Insert Screenshot: Place screenshot of program structure]
+<!-- [Insert Screenshot: Place screenshot of program structure] -->
+![Fig-1](<Output Screenshot\Exp10\Screenshot From 2025-10-26 01-33-37.png>)
 
 2. Examine Decompiled Code:
    - Use Decompiler window
    - Analyze function logic
    - Identify suspicious operations
    
-[Insert Screenshot: Place screenshot of decompiled code view]
+<!-- [Insert Screenshot: Place screenshot of decompiled code view] -->
+![Fig-1](<Output Screenshot\Exp10\Screenshot From 2025-10-26 01-41-16.png>)
 
 ### 5. Function Analysis
 1. Identify main functions:
@@ -76,14 +87,16 @@ Ghidra is a powerful software reverse engineering (SRE) framework developed by N
    - Important API calls
    - String references
    
-[Insert Screenshot: Place screenshot showing important functions]
+<!-- [Insert Screenshot: Place screenshot showing important functions] -->
+![Fig-1](<Output Screenshot\Exp10\Screenshot From 2025-10-26 01-40-45.png>)
 
 2. Analyze suspicious functions:
    - Network operations
    - File system operations
    - Registry modifications
    
-[Insert Screenshot: Place screenshot of suspicious function analysis]
+<!-- [Insert Screenshot: Place screenshot of suspicious function analysis] -->
+![Fig-1](<Output Screenshot/Exp1/Screenshot 2025-08-31 165800.png>)
 
 ### 6. String Analysis
 1. Examine string references:
@@ -92,28 +105,28 @@ Ghidra is a powerful software reverse engineering (SRE) framework developed by N
    - Registry keys
    - Command strings
    
-[Insert Screenshot: Place screenshot of string analysis]
+<!-- [Insert Screenshot: Place screenshot of string analysis] -->
+![Fig-1](<Output Screenshot/Exp1/Screenshot 2025-08-31 165800.png>)
 
 ### 7. Cross-Reference Analysis
 1. Track function calls:
    - Who calls this function
    - What this function calls
    
-[Insert Screenshot: Place screenshot of cross-references]
-
 ### 8. Memory Analysis
 1. Review memory layout:
    - Sections
    - Segments
    - Permissions
    
-[Insert Screenshot: Place screenshot of memory layout]
+<!-- [Insert Screenshot: Place screenshot of memory layout] -->
+![Fig-1](<Output Screenshot\Exp10\Screenshot From 2025-10-26 01-44-00.png>)
 
 ## Results
 The experiment successfully demonstrated:
 
 1. Code Analysis Results:
-   - Total functions analyzed: [X]
+   - Total functions analyzed:[✅]
    - Suspicious functions identified: [X]
    - Malicious behaviors detected: [X]
 
@@ -129,65 +142,19 @@ The experiment successfully demonstrated:
    - System impact assessment
    - Network indicators
 
-## Analysis Summary
-
-### 1. Malware Characteristics
-- Type of malware identified
-- Primary functions discovered
-- Execution flow
-- System interaction points
-
-### 2. Technical Details
-1. Entry Points:
-   - Main execution flow
-   - Alternative entry points
-   - Initialization routines
-
-2. Key Functions:
-   - Network communication
-   - File operations
-   - System modifications
-   - Anti-analysis techniques
-
-3. Indicators of Compromise (IoCs):
-   - File hashes
-   - Network indicators
-   - Registry modifications
-   - File system artifacts
-
-### 3. Behavioral Analysis
-1. System Interaction:
-   - Files created/modified
-   - Registry changes
-   - Network connections
-   - Process manipulation
-
-2. Persistence Mechanisms:
-   - Startup methods
-   - Service creation
-   - Registry modifications
-   - File system changes
 
 ## Conclusion
-The analysis using Ghidra successfully revealed:
+Ghidra proved to be a powerful tool for malware analysis and reverse engineering.
 
-1. Malware Functionality:
-   - Primary purpose
-   - Execution methods
-   - System impact
-   - Communication methods
+Key achievements:
+1. Successfully disassembled and decompiled malware code
+2. Identified malicious functions and system interactions
+3. Extracted indicators of compromise for detection
+4. Understood malware behavior and persistence mechanisms
 
-2. Technical Insights:
-   - Code structure
-   - Anti-analysis techniques
-   - Evasion methods
-   - Persistence mechanisms
+**Important**: Always perform malware analysis in isolated virtual environments to prevent system compromise.
 
-3. Defensive Recommendations:
-   - Detection methods
-   - Prevention strategies
-   - System hardening
-   - Network protection
+The tool is highly recommended for digital forensics professionals conducting malware investigation and threat analysis.
 
 Best Practices Identified:
 1. Systematic analysis approach

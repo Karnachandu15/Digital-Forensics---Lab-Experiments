@@ -34,113 +34,67 @@ cd StegExpose
 java -version
 ```
 
-3. Test StegExpose:
-```bash
-java -jar StegExpose.jar -h
-```
-![StegExpose help menu](Output%20Screenshot/Exp8/stegexpose-help.png)
-<!-- [Insert Screenshot: Place screenshot showing StegExpose help menu] -->
-
 ### 2. Preparing Test Images
 1. Collect sample images for testing:
    - Clean images (without hidden data)
    - Images with known hidden data
    - Suspicious images for analysis
 
-![test image collection](Output%20Screenshot/Exp8/test-images.png)
+![test image collection](Output%20Screenshot/Exp8/Screenshot%20From%202025-10-26%2015-34-07.png)
 <!-- [Insert Screenshot: Place screenshot showing test image collection] -->
 
 ### 3. Basic Image Analysis
-1. Analyze a single image:
-```bash
-stegexpose image1.jpg
-```
-![single image analysis](Output%20Screenshot/Exp8/single-image-analysis.png)
-<!-- [Insert Screenshot: Place screenshot of single image analysis result] -->
 
-2. Analyze multiple images in a directory:
+1. Analyze images in a directory:
 ```bash
-stegexpose directory_path/
+java -jar StegExpose.jar /home/kali/Downloads/testingsteg -a -r result1.csv
 ```
-![batch analysis](Output%20Screenshot/Exp8/batch-analysis.png)
+this will make the result to save in the .CSV file
+![batch analysis](Output%20Screenshot/Exp8/Screenshot%20From%202025-10-26%2015-00-32.png)
 <!-- [Insert Screenshot: Place screenshot showing batch analysis results] -->
 
-### 4. Advanced Detection Settings
-1. Run analysis with custom threshold:
-```bash
-stegexpose -t 0.2 suspicious_image.png
-```
-![custom threshold analysis](Output%20Screenshot/Exp8/custom-threshold.png)
-<!-- [Insert Screenshot: Place screenshot of analysis with custom threshold] -->
+### 4. Analyze the Output
+1. After running the tool, it will analyze the image and provide a score.
 
-2. Generate detailed report:
-```bash
-stegexpose -csv report.csv image_folder/
-```
-![CSV report generation](Output%20Screenshot/Exp8/csv-report.png)
+2. Output Explanation:
+   - StegExpose calculates a "suspect" score (between 0 and 1). The higher the score, the more likely that hidden data is present.
+   - Threshold values (suggested by the tool):
+   - Less than 0.2: Image is clean (no hidden data).
+   - 0.2 - 0.3: Possibly some hidden data.
+   - Above 0.3: Likely that steganography is present.
+
+![report image](Output%20Screenshot/Exp8/Screenshot%20From%202025-10-26%2015-55-16.png)
 <!-- [Insert Screenshot: Place screenshot showing CSV report generation] -->
 
-### 5. Statistical Analysis Methods
-1. Primary Detection Techniques Used:
-   - Sample Pair Analysis
-   - RS Analysis
-   - Chi-Square Attack
-   - Primary Sets Analysis
 
-![analysis methods](Output%20Screenshot/Exp8/analysis-methods.png)
-<!-- [Insert Screenshot: Place screenshot showing different analysis methods] -->
-
-### 6. Result Interpretation
+### 5. Result Interpretation
 1. Understanding the output scores:
    - 0.0 to 0.2: Likely clean
    - 0.2 to 0.4: Suspicious
    - Above 0.4: High probability of hidden content
 
-![result interpretation](Output%20Screenshot/Exp8/result-interpretation.png)
+![result interpretation](Output%20Screenshot/Exp8/Screenshot%202025-10-26%20155902.png)
 <!-- [Insert Screenshot: Place screenshot showing result interpretation] -->
 
-### 7. Validation Process
-1. Compare results with known test cases
-2. Document false positives and false negatives
-![validation results](Output%20Screenshot/Exp8/validation-results.png)
-<!-- [Insert Screenshot: Place screenshot of validation results] -->
 
 ## Results
-The experiment successfully demonstrated:
+The experiment successfully demonstrated the use of StegExpose for detecting hidden data in images:
 
-1. Detection Capabilities:
-   - Number of images analyzed: [X]
-   - True positives: [X]
-   - False positives: [X]
-   - Detection accuracy: [X%]
+1. **Image Analysis**:
+   - Successfully analyzed multiple images using StegExpose
+   - Generated CSV reports with detection scores
+   - Identified suspicious images based on threshold values
 
-2. Performance Metrics:
-   - Average analysis time per image: [X] seconds
-   - False positive rate: [X%]
-   - Detection threshold effectiveness: [X%]
+2. **Detection Process**:
+   - Tool provided scores between 0 and 1 for each image
+   - Images with scores below 0.2 were classified as clean
+   - Images with scores above 0.3 indicated likely presence of hidden data
 
-3. Tool Effectiveness:
-   - Successfully identified [X] out of [Y] images with hidden data
-   - Correctly classified [Z%] of clean images
+3. **Key Observations**:
+   - StegExpose effectively scanned directories with multiple images
+   - Results were saved in CSV format for easy review
+   - The tool identified which images likely contain hidden information
 
-## Analysis Findings
-
-### 1. Detection Accuracy
-- Different file formats analysis:
-  - JPEG: [X%] accuracy
-  - PNG: [X%] accuracy
-  - BMP: [X%] accuracy
-
-### 2. Limitations Observed
-- File size limitations
-- Format-specific detection rates
-- Processing time considerations
-- False positive scenarios
-
-### 3. Best Practices Identified
-1. Optimal threshold settings for different image types
-2. Most effective analysis methods for various steganography techniques
-3. Recommended workflow for bulk image analysis
 
 ## Conclusion
 Steg-Expose proved to be an effective tool for detecting steganographic content in images. The experiment successfully demonstrated its capability to:

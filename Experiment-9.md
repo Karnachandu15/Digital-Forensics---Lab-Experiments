@@ -27,22 +27,27 @@ Process Explorer is an advanced system monitoring tool that provides detailed in
    - Enable "Verify Image Signatures"
    - Configure VirusTotal integration
    
-[Insert Screenshot: Place screenshot of Process Explorer initial setup]
+![Process Explorer setup](Output%20Screenshot/Exp9/Screenshot%20(123).png)
+![Process Explorer setup](Output%20Screenshot/Exp9/Screenshot%20(124).png)
+
+<!-- [Insert Screenshot: Place screenshot of Process Explorer initial setup] -->
 
 ### 2. Basic Process Analysis
 1. Observe the two-pane display:
    - Upper pane: Process list
    - Lower pane: Handle or DLL view
 
-[Insert Screenshot: Place screenshot showing Process Explorer main interface]
+![Process Explorer interface](Output%20Screenshot/Exp9/Screenshot%20(127).png)
+<!-- [Insert Screenshot: Place screenshot showing Process Explorer main interface] -->
 
 2. Understanding the color coding:
    - Purple: Packed processes
    - Pink: Services
    - Blue: New processes
    - Red: Terminated processes
-   
-[Insert Screenshot: Place screenshot highlighting different process colors]
+
+![Process color coding](Output%20Screenshot/Exp9/Screenshot%20(126).1.png)
+<!-- [Insert Screenshot: Place screenshot highlighting different process colors] -->
 
 ### 3. Identifying Suspicious Processes
 1. Check for unusual process names or locations
@@ -51,8 +56,6 @@ Process Explorer is an advanced system monitoring tool that provides detailed in
    - No company name
    - Suspicious file locations
    - High CPU or memory usage
-   
-[Insert Screenshot: Place screenshot showing suspicious process identification]
 
 ### 4. Process Properties Analysis
 1. Right-click suspicious process → Properties
@@ -63,7 +66,8 @@ Process Explorer is an advanced system monitoring tool that provides detailed in
    - Start time
    - User account
    
-[Insert Screenshot: Place screenshot of process properties window]
+![Process properties](Output%20Screenshot/Exp9/Screenshot%20(130).png)
+<!-- [Insert Screenshot: Place screenshot of process properties window] -->
 
 ### 5. VirusTotal Integration
 1. Enable VirusTotal submission
@@ -71,33 +75,32 @@ Process Explorer is an advanced system monitoring tool that provides detailed in
    - Right-click process
    - Select "Check VirusTotal"
    
-[Insert Screenshot: Place screenshot showing VirusTotal check results]
+![VirusTotal check](Output%20Screenshot/Exp9/Screenshot%20(137).png)
+<!-- [Insert Screenshot: Place screenshot showing VirusTotal check results] -->
 
 ### 6. DLL and Handle Investigation
 1. View loaded DLLs:
    - Select process
    - Lower pane: DLL view
    
-[Insert Screenshot: Place screenshot of DLL investigation]
+![DLL investigation](Output%20Screenshot/Exp9/Screenshot%20(133).png)
+<!-- [Insert Screenshot: Place screenshot of DLL investigation] -->
 
 2. Analyze handles:
    - Switch to handle view
    - Look for suspicious file/registry handles
    
-[Insert Screenshot: Place screenshot of handle analysis]
+![Handle analysis](Output%20Screenshot/Exp9/Screenshot%20(138).png)
+<!-- [Insert Screenshot: Place screenshot of handle analysis] -->
 
 ### 7. Tree View Analysis
 1. View process relationships:
    - Enable tree view
    - Identify parent-child relationships
    
-[Insert Screenshot: Place screenshot of process tree view]
+![Process tree view](Output%20Screenshot/Exp9/Screenshot%20(134).png)
+<!-- [Insert Screenshot: Place screenshot of process tree view] -->
 
-### 8. Advanced Analysis
-1. Stack traces
-2. Thread analysis
-3. Network connections
-[Insert Screenshot: Place screenshot of advanced analysis features]
 
 ## Results
 The experiment successfully demonstrated:
@@ -118,45 +121,14 @@ The experiment successfully demonstrated:
    - Common characteristics of malicious processes
    - System resource impact
 
-## Analysis Summary
-
-### 1. Process Characteristics
-- Identified suspicious patterns:
-  - Unusual file locations
-  - Suspicious DLL loading
-  - Abnormal parent-child relationships
-  - Unexpected network connections
-
-### 2. System Impact
-- Resource utilization
-- System stability
-- Network activity
-- File system changes
-
-### 3. Investigation Techniques
-1. Effective methods for identifying suspicious processes
-2. Verification procedures using VirusTotal
-3. Documentation of findings
-4. Response procedures
 
 ## Conclusion
-Process Explorer proved to be a powerful tool for digital forensics investigation by:
+Process Explorer is an effective digital forensics tool for identifying and analyzing suspicious processes on Windows systems. 
 
-1. Providing detailed process information
-2. Enabling real-time monitoring of system activities
-3. Facilitating malware identification
-4. Supporting in-depth analysis of suspicious processes
+Key benefits:
+1. Real-time monitoring of all running processes
+2. Quick identification of unsigned or suspicious executables
+3. Easy verification of processes using VirusTotal
+4. Detailed view of process relationships and loaded DLLs
 
-The tool demonstrated particular effectiveness in:
-- Identifying hidden processes
-- Analyzing process relationships
-- Detecting unusual system behavior
-- Supporting malware investigation
-
-Best Practices Identified:
-1. Regular system monitoring
-2. Baseline process knowledge
-3. Systematic investigation approach
-4. Proper documentation of findings
-
-[Note: Please add actual screenshots of your experiment execution in the designated places marked with "Insert Screenshot" tags. Also, replace all placeholder values in square brackets with actual experimental data.]
+The tool is recommended for initial system investigation and ongoing security monitoring of Windows environments.

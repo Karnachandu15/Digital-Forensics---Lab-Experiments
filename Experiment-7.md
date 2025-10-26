@@ -117,6 +117,7 @@ Replace XXXX-XXXX with your card ID:
    tar -cvf sd_backup.tar "C:\Users\K CHANDRA SEKHAR\backup"
 ```
 ![tar creation 1](Output%20Screenshot/Exp7/Screenshot%202025-10-24%20233410.png)
+
 ![tar creation 2](Output%20Screenshot/Exp7/Screenshot%202025-10-24%20233430.png)
 <!-- [Insert Screenshot: Conversion process output] -->
 
@@ -156,16 +157,7 @@ Document the following findings:
    - Total files extracted: [Count]
    - Key databases found: [List]
 
-## Analysis Findings
-1. Data Accessibility:
-   - Successfully extracted user data
-   - Located and analyzed key databases
-   - Retrieved media files from shared storage
 
-2. Process Validation:
-   - Maintained forensic integrity through hashing
-   - Documented all steps and findings
-   - Preserved original backup file
 
 ## Conclusion
 The experiment successfully demonstrated the process of performing logical acquisition from an Android device using ADB backup. This method proves effective for basic forensic acquisition while maintaining evidence integrity through proper documentation and hash verification.
