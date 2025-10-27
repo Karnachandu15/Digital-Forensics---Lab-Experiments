@@ -47,7 +47,6 @@ java -version
    - Suspicious images for analysis
 
 ![test image collection](Output%20Screenshot/Exp8/Screenshot%20From%202025-10-26%2015-34-07.png)
-<!-- [Insert Screenshot: Place screenshot showing test image collection] -->
 
 ### 3. Basic Image Analysis
 
@@ -57,7 +56,6 @@ java -jar StegExpose.jar /home/kali/Downloads/testingsteg -a -r result1.csv
 ```
 this will make the result to save in the .CSV file
 ![batch analysis](Output%20Screenshot/Exp8/Screenshot%20From%202025-10-26%2015-00-32.png)
-<!-- [Insert Screenshot: Place screenshot showing batch analysis results] -->
 
 ### 4. Analyze the Output
 1. After running the tool, it will analyze the image and provide a score.
@@ -70,8 +68,6 @@ this will make the result to save in the .CSV file
    - Above 0.3: Likely that steganography is present.
 
 ![report image](Output%20Screenshot/Exp8/Screenshot%20From%202025-10-26%2015-55-16.png)
-<!-- [Insert Screenshot: Place screenshot showing CSV report generation] -->
-
 
 ### 5. Result Interpretation
 1. Understanding the output scores:
@@ -80,7 +76,6 @@ this will make the result to save in the .CSV file
    - Above 0.4: High probability of hidden content
 
 ![result interpretation](Output%20Screenshot/Exp8/Screenshot%202025-10-26%20155902.png)
-<!-- [Insert Screenshot: Place screenshot showing result interpretation] -->
 
 ---
 
